@@ -1,0 +1,10 @@
+<div class="individual-snippet">
+  <div class="title">{{snippet.title}}</div>
+
+<div class="text">{{snippet.text}}</div>
+{{#if snippet.editable}}
+<div {{action "deleteItem"}} class="btn btn-warning">remove</div>
+{{#link-to 'snippet' snippet.id}}edit{{/link-to}}
+
+{{/if}}
+</div>
